@@ -1,0 +1,10 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: 'KAFKA Producer'
+  kafka:
+    bootstrap-servers: 'localhost:9092'
+    retry:
+      topic:
+        attempts: 5
