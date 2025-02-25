@@ -4,7 +4,7 @@
 
 # Sobre o projeto
 
-Este é um microserviço Java utilizando Spring Boot e Apache Kafka. O sistema consiste em um Producer que envia mensagens com informações de uma classe PersonDTO para um Consumer, que as processa.
+Este projeto consiste em dois microserviços desenvolvidos em Java, utilizando o Spring Boot e Apache Kafka. O sistema é composto por um Producer, responsável por enviar mensagens contendo informações sobre uma entidade PersonDTO, que é compartilhada entre os dois microserviços por meio de uma biblioteca comum (lib-commons). Essas mensagens são enviadas para uma fila RabbitMQ, onde são consumidas por um Consumer, que processa as informações.
 
 # Funcionalidades
 - Envio de mensagens para o Kafka através de um Producer.
